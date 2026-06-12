@@ -1,36 +1,45 @@
-# BOI-Hackathon
-## Sentinel AI - Fraud Detection System
+# BOI Hackathon - Fraud Detection
 
-A fraud detection project i made for the BOI Hackathon using Python and Machine Learning.
-
----
-
-## What it does
-
-- Detects fraudulent transactions from a dataset
-- Gives each transaction a risk score
-- Flags high risk accounts automatically
-- Shows results in a Streamlit dashboard
+This is my project for the BOI Hackathon. I built a fraud detection system using machine learning and a streamlit dashboard.
 
 ---
 
-## Model Results
+## What i did
+
+I took a bank transaction dataset given by BOI and trained a Random Forest model to detect fraud. The target column given by BOI was `F3924` (0 = Normal, 1 = Fraud). Then i added a dashboard to show the results and a graph to visualize how money moves through mule accounts.
+
+---
+
+## Results
 
 - Accuracy: 99.61%
 - Precision: 100%
 - Recall: 67%
-- Total records: 9082
-- Fraud cases found: 81
+- F1 Score: 80%
+- Total transactions: 9082
+- Fraud cases: 81
+- High risk accounts found: 12
+
+The confusion matrix shows 1801 correct normal predictions and only 16 fraud cases were missed.
+
+---
+
+## Charts
+
+- `fraud_distribution.png` - shows how many normal vs fraud transactions
+- `correlation_heatmap.png` - feature correlation between the 18 selected features
+- `feature_importance.png` - F2737 and F3836 were the most important features
+- `model_comparison.png` - compared Random Forest, Decision Tree, and Logistic Regression
+- `confusion_matrix.png` - final model predictions vs actual
 
 ---
 
 ## Files
 
-- `sentinel_ai.py` - the streamlit dashboard
-- `fraud_analysis.ipynb` - model training notebook
-- `DataSet.zip` - dataset used
-- `high_risk_transactions.xls` - output file
-- `requirements.txt` - dependencies
+- `Fraud_dashboard.py` - streamlit dashboard
+- `Fraud_analysis.ipynb` - model training notebook
+- `DataSet.csv` - dataset
+- `requirements.txt` - libraries needed
 
 ---
 
@@ -38,24 +47,20 @@ A fraud detection project i made for the BOI Hackathon using Python and Machine 
 
 ```
 pip install -r requirements.txt
-streamlit run sentinel_ai.py
+streamlit run Fraud_dashboard.py
 ```
 
 ---
 
-## Built with
+## Libraries used
 
-- Python
-- Pandas
-- Scikit-learn
-- Streamlit
-- NetworkX
-- Matplotlib
+- pandas
+- scikit-learn
+- matplotlib
+- seaborn
+- streamlit
+- networkx
 
 ---
 
-Made by 
-Bhavadarini M
-Yashwanthi B K
-Niranjana G
-Ridhushree A
+*Made by Bhava243 for BOI Hackathon*
