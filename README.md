@@ -63,7 +63,7 @@ streamlit run Fraud_dashboard.py
 
 ---
 
-*Made by *
+*Made by*
 Bhavadarini M
 Yashwanthi B K
 Niranjana G
