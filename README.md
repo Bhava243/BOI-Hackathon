@@ -63,4 +63,8 @@ streamlit run Fraud_dashboard.py
 
 ---
 
-*Made by Bhava243 for BOI Hackathon*
+*Made by *
+Bhavadarini M
+Yashwanthi B K
+Niranjana G
+Ridhushree A
