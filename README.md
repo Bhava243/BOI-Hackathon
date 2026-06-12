@@ -54,4 +54,8 @@ streamlit run sentinel_ai.py
 
 ---
 
-Made by Bhava243
+Made by 
+Bhavadarini M
+Yashwanthi B K
+Niranjana G
+Ridhushree A
